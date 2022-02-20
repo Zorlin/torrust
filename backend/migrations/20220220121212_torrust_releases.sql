@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS torrust_releases (
-    torrent_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    release_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    release_type VARCHAR(20) NOT NULL,
     uploader VARCHAR(32) NOT NULL,
     info_hash VARCHAR(20) UNIQUE,
     ipfs_hash VARCHAR(64) UNIQUE,
